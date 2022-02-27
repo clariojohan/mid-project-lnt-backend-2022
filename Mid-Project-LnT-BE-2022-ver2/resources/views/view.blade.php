@@ -36,7 +36,7 @@
                         <td>{{ $book->bookAuthor }}</td>
                         <td>{{ $book->bookPages }}</td>
                         <td>{{ $book->bookYear }}</td>
-                        <td>
+                        <td style="display: flex; justify-content: center;">
                             <!-- BUTTON MASIH BLOM INLINE, MASIH KEBAWAH COBA CARI BIAR BISA INLINE -->
                             <!-- BUTTON MASIH BLOM INLINE, MASIH KEBAWAH COBA CARI BIAR BISA INLINE -->
                             <!-- BUTTON MASIH BLOM INLINE, MASIH KEBAWAH COBA CARI BIAR BISA INLINE -->
@@ -45,10 +45,7 @@
                             <a href="{{ route('updateBook', $book->id) }}">
                                 <i
                                     class="fa-solid fa-pen-to-square"
-                                    style="
-                                        margin: 0px 20px 0px 0px;
-                                        color: white;
-                                    "
+                                    style="color: white; margin: auto 10px;"
                                 ></i>
                             </a>
                             <form
@@ -68,10 +65,7 @@
                                 >
                                     <i
                                         class="fa-solid fa-trash"
-                                        style="
-                                            margin: 0px 20px 0px 0px;
-                                            color: white;
-                                        "
+                                        style="color: white; margin: auto 10px;"
                                     ></i>
                                 </button>
                             </form>
@@ -79,7 +73,7 @@
                     </tr>
                     @endforeach
                     <tr>
-                        <td>
+                        <td style="display: flex; justify-content: center;">
                             <a href="/create">
                                 <i
                                     class="fa-solid fa-plus-square"
